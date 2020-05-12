@@ -23,6 +23,7 @@ export class SingleBookComponent implements OnInit {
     this.booksService.getSingleBooks(+id).then((book: Book) => {
       this.book = book;
     });
+    console.log(this.book.photo);
   }
 
   onBack() {
